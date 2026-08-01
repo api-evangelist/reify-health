@@ -1,8 +1,29 @@
 aid: reify-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/reify-health.png
 name: Reify Health
-description: 'Reify Health is a company surfaced as a portfolio company of altimeter-capital, battery-ventures,
-  iconiq-capital, sierra-ventures and added to the API Evangelist network as a stub for enrichment. Sector:
-  healthtech. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Reify Health is a clinical research technology company whose mission is
+  to remove clinical trial operations as the bottleneck to delivering new therapies
+  to patients. It is the parent organization behind OneStudyTeam, whose StudyTeam platform
+  is a cloud-based patient enrollment and recruitment management system connecting research
+  sites, sponsors, patients, and vendors on a unified workspace, and Care Access, a
+  business unit expanding trial access to underserved communities. StudyTeam is used
+  by roughly 70% of the sponsors running the most clinical trials (including Amgen,
+  AstraZeneca, and Eli Lilly), across 10,000+ research sites in 100+ countries. Reify
+  Health is backed by Altimeter Capital, Battery Ventures, ICONIQ Capital, and Sierra
+  Ventures. No public developer API, developer portal, or API specification was found
+  during enrichment; this profile captures company identity, links, and domain-security
+  posture.'
 url: https://raw.githubusercontent.com/api-evangelist/reify-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -15,10 +36,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Healthtech
+- Clinical Trials
+- Clinical Research
+- Patient Recruitment
+- Life Sciences
+- Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,5 +52,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/reify-health-domain-security.yml
 - type: Website
   url: https://www.reifyhealth.com
+- type: Blog
+  url: https://www.onestudyteam.com/blog
+- type: Support
+  url: https://www.onestudyteam.com/customer-support
+- type: PrivacyPolicy
+  url: https://www.onestudyteam.com/privacy-policy
+- type: Careers
+  url: https://www.onestudyteam.com/careers
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
